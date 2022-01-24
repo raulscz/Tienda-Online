@@ -67,7 +67,10 @@ class ProductoController extends Controller
     }
 
     public function modificarProductoPut(Request $request){
+        $marca = $request['nombre_marca'];
+        $idMarca = DB::table('tbl_marca')->select('id')->where('nombre_marca','=',$marca)->first();
         $datos = $request->except('_token','_method','nombre_marca');
+        $datos['id_marca'] = $idMarca->id;
         if ($request->hasFile('foto_producto')) {
             $foto = DB::table('tbl_product')->select('foto_producto')->where('id','=',$request['id'])->first();
             if ($foto->foto_producto != null) {
@@ -78,10 +81,8 @@ class ProductoController extends Controller
             $foto = DB::table('tbl_product')->select('foto_producto')->where('id','=',$request['id'])->first();
             $datos['foto_producto'] = $foto->foto_producto;
         }
-        //$datostelf=$request->except('_token','_method','nombre_persona','apellido_persona','dni_persona','edad_persona','id','foto_persona');
         try {
             DB::beginTransaction();
-            //DB::table('tbl_telef')->where('id_telf','=',$datostelf['id_telf'])->update($datostelf);
             DB::table('tbl_product')->where('id','=',$datos['id'])->update($datos);
             DB::commit();
         } catch (\Exception $e) {
