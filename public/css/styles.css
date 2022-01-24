@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+
+/*Estilos Generales*/
+
+.flex-cv {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+
+/*Estilos Para El Login*/
+
+.login {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.cuadro_login {
+    height: 500px;
+    width: 650px;
+    border: 5px solid;
+    background: #b3cde0;
+    border-color: #011f4b;
+}
+
+.cuadro_login p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.inputlogin {
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    border-color: #011f4b;
+    background-color: #005b96;
+    outline: none;
+    color: #fff;
+}
+
+.botonlogin {
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    border-color: #011f4b;
+    background-color: #005b96;
+    color: #fff;
+}
+
+
+/*Estilos Para Mostrar Tabla*/
+
+.mostrar {
+    background-image: url("../../public/img/fondo-mostrarjpeg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Form {
+    width: 200px;
+    height: 35px;
+    border-radius: 3px;
+    border-color: #000000;
+    background-color: rgba(101, 115, 126);
+    outline: none;
+    color: #fff;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: #E1D9BE;
+    background-color: rgba(101, 115, 126);
+    border-right: 2pt solid rgba(17, 17, 17);
+}
+
+.table td {
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: #000000;
+    border-right: 2pt solid rgba(17, 17, 17);
+    font-weight: bold;
+}
+
+.table tr {
+    border-spacing: 0px 20px;
+    border-left: 2pt solid rgba(17, 17, 17);
+    border-right: 2pt solid rgba(17, 17, 17);
+    border-top: 2pt solid rgba(17, 17, 17);
+    border-bottom: 2pt solid rgba(17, 17, 17);
+    background-color: rgba(192, 197, 206);
+}
+
+table tr:hover {
+    background-color: rgba(119, 119, 119);
+}
+
+.boton {
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    float: right;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: #bae1ff;
+    border-color: black;
+    border-bottom: 5px solid black;
+    float: left;
+    display: flex;
+}
+
+.botonAcciones {
+    position: relative;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: #ffb3ba;
+    border-color: black;
+    border-bottom: 5px solid black;
+    float: center;
+}
+
+#logout {
+    background-color: #ffdfba;
+}
+
+#eliminar {
+    background-color: #ffb3ba;
+}
+
+#modificar {
+    background-color: #ffffba;
+}
+
+#usuarios {
+    background-color: #bc4758;
+}
+
+#correo {
+    background-color: #1ebbd7;
+}
+
+
+/*Estilos Para Crear*/
+
+.crear {
+    background-image: url("../../public/img/fondo-crear.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.cuadro_crear {
+    height: 610px;
+    width: 650px;
+    border: 5px solid;
+    background: #EEE1E0;
+    border-color: #8A8278;
+}
+
+.cuadro_crear p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.inputcrear {
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    border-color: #8A8278;
+    background-color: #622E23;
+    outline: none;
+    color: #fff;
+}
+
+.botoncrear {
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    border-color: #8A8278;
+    background-color: #622E23;
+    color: #fff;
+}
+
+.cuadro_correo {
+    height: 550px;
+    width: 650px;
+    border: 5px solid;
+    background: #EEE1E0;
+    border-color: #8A8278;
+}
+
+.cuadro_correo p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.text_area {
+    width: 300px;
+    height: 145px;
+    border-radius: 7px;
+    border-color: #8A8278;
+    background-color: #622E23;
+    outline: none;
+    color: #fff;
+}
+
+
+/*Estilos Inicio*/
+
+header {
+    background: #03A9F4;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+img {
+    width: 120px;
+    height: 50px;
+    float: left;
+    padding: 8px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.header {
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+    background-image: url("../../public/img/cabecera-inicio.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -334px;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.inicio {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+
+/*Gallery*/
+
+.gallery {
+    padding: 20px;
+    float: left;
+    width: 33%;
+    height: 500px;
+}
+
+.gallery img,
+.inlineImg img {
+    width: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery:hover {
+    background-color: #D35400;
+    color: white;
+}
