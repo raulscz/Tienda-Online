@@ -45,7 +45,7 @@ class UsuarioController extends Controller
         $request->session()->forget('nombre_admin');
         //Eliminar todo
         $request->session()->flush();
-        return redirect('/login');
+        return redirect('/');
     }
 
     /*Mostrar*/

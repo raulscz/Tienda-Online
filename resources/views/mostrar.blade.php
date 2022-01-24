@@ -30,9 +30,20 @@
                 <img src="{{asset('storage').'/'.$producto->foto_producto}}">
                 <div>{{$producto->nombre_producto}}</div>
             </div>
-            
         </div>
         @endforeach
+    </div>
+    <div class="row" id="footer">
+        <div class="four-column">
+            <h2>Creadores</h2>
+            <p>Isaac Ortiz</p>
+            <p>Raúl Santacruz</p>
+        </div>
+        <div class="four-column">
+            <h2>Main Sponsors</h2>
+            <p>Nike</p>
+            <p>Adidas</p>
+        </div>
     </div>
 </body>
 </html>
